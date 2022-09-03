@@ -16,7 +16,7 @@ end
 # Change the following test to make it pass
 @external
 func test_hello{syscall_ptr : felt*}():
-    let (result) = returns_something()
+    let (result) = my_namespace.returns_something()
     assert result = 42
     return ()
 end
