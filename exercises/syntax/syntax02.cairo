@@ -6,6 +6,7 @@
 # I AM NOT DONE
 
 # TODO: add the module imports needed to make the test pass!
+from starkware.cairo.common.cairo_builtins import HashBuiltin
 
 # You can ignore what follows for now
 @external
