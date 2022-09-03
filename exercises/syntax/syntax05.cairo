@@ -2,9 +2,11 @@
 
 # As with many other languages, you can describe object structures with the struct keyword.
 
-# I AM NOT DONE
-
 # TODO: declare the Currency struct to make the test pass
+struct Currency:
+    member name: felt
+    member id: felt
+end
 
 # Do not change the test
 @external

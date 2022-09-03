@@ -2,8 +2,6 @@
 
 # Function and other definitions can be scoped in namespaces, making the code more readable.
 
-# I AM NOT DONE
-
 # TODO: make the test pass!
 
 # Do not change anything but the test
