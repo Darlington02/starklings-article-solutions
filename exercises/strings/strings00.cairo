@@ -12,7 +12,9 @@
 # TODO: Fix the say_hello function by returning the appropriate short strings
 
 func say_hello() -> (hello_string : felt, hello_felt : felt, hello_hex : felt):
-    # FILL ME
+    let hello_string = 'Hello Starklings'
+    let hello_felt = 12011164701440182822452181791570417168947
+    let hello_hex = 0x627569646c20627569646c20627569646c
     return (hello_string, hello_felt, hello_hex)
 end
 
