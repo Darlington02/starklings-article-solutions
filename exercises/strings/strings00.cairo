@@ -7,8 +7,6 @@
 #      let hello_hex = 0x48656c6c6f
 # https://www.cairo-lang.org/docs/how_cairo_works/consts.html#short-string-literals
 
-# I AM NOT DONE
-
 # TODO: Fix the say_hello function by returning the appropriate short strings
 
 func say_hello() -> (hello_string : felt, hello_felt : felt, hello_hex : felt):
