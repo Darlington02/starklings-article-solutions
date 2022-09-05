@@ -10,7 +10,8 @@
   </p>
   
   <h3 align="center">An interactive tutorial to get you up and running with Starknet</h3>
-  This repo contains my solutions to the Starkling exercises, written in my medium article series "Journey through Cairo II - Mastering the fundamentals with Starklings".
+  Solutions to my medium article series "Journey through Cairo II - Mastering the fundamentals with Starklings"
+   https://medium.com/@darlingtonnnam/journey-through-cairo-ii-mastering-cairos-syntaxes-with-starklings-8d3cbad6946
 </div>
 
 ---
