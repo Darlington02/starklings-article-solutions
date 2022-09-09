@@ -3,11 +3,9 @@
 # Functions can take implicit arguments. You might have already encountered this with
 # syscall_ptr: felt* for example.
 
-# I AM NOT DONE
-
 # TODO: fix the "implicit_sum" signature to make the test pass
 
-func implicit_sum() -> (result : felt):
+func implicit_sum{a: felt, b: felt}() -> (result : felt):
     return (a + b)
 end
 
