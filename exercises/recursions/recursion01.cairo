@@ -5,12 +5,22 @@
 # F(1) = 1
 # F(n) = F(n-1) + F(n-2)
 
-# I AM NOT DONE
-
 # TODO: write a recursive implementation of fibonacci numbers that returns the nth fibonacci number
 
 func fibonacci(n : felt) -> (result : felt):
-    return (0)
+    alloc_locals
+    if n == 0:
+        return (0)
+    end
+
+    if n == 1:
+        return (1)
+    end
+
+    let (local x) = fibonacci(n - 1)
+    let (local y) = fibonacci(n - 2)
+
+    return (x + y)
 end
 
 # Do not change the test

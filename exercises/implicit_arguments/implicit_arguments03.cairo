@@ -4,13 +4,12 @@
 # This is a very powerful feature of the language since it helps with readability, letting the developer omit
 # implicit arguments in the subsequent function calls.
 
-# I AM NOT DONE
-
 # TODO: implement the "black_box" function body to make the test pass
 
 # Do not change the function signature!
 func black_box{secret : felt}() -> ():
     # Make the magic happen here :)
+    let secret = 'very secret!'
     return ()
 end
 
