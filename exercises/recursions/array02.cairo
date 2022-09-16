@@ -7,8 +7,6 @@
 # to make it achieve the desired result: returning an array
 # with the squared values of the input array.
 
-# I AM NOT DONE
-
 from starkware.cairo.common.alloc import alloc
 
 func square(array : felt*, array_len : felt, newarray : felt*):
