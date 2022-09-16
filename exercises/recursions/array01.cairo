@@ -2,14 +2,22 @@
 
 # Arrays can be passed as function arguments in the form of a pointer and a length.
 
-# I AM NOT DONE
-
 # TODO: write the "contains" function body that returns 1 if the haystack contains the needle and 0 otherwise.
 
 from starkware.cairo.common.alloc import alloc
 
 func contains(needle : felt, haystack : felt*, haystack_len : felt) -> (result : felt):
-    return (0)
+    if haystack_len == 0:
+        return (0)
+    end 
+
+    if haystack[0] == needle:
+        return (1)
+    end 
+
+    let (contained) = contains(needle, haystack + 1, haystack_len - 1)
+    return (contained)
+
 end
 
 # Do not change the test
