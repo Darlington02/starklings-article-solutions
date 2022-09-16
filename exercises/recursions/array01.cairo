@@ -2,6 +2,7 @@
 
 # Arrays can be passed as function arguments in the form of a pointer and a length.
 
+
 # TODO: write the "contains" function body that returns 1 if the haystack contains the needle and 0 otherwise.
 
 from starkware.cairo.common.alloc import alloc
