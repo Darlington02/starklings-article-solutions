@@ -6,15 +6,16 @@ from starkware.cairo.common.bool import TRUE, FALSE
 # Sometimes, conditionals can be avoided by using a polynomial that maps valid inputs to 0
 # Use this trick to rewrite functions without "if"
 
-# I AM NOT DONE
-
 # TODO: Implement a ternary operator `if cond then return val_true else return val_false`
 # Make sure the condition is a boolean
 
 func if_then_else(cond : felt, val_true : felt, val_false) -> (res : felt):
-    # FILL ME
+    let is_boolean_helper = (cond - TRUE) * (cond - FALSE)
+    assert 0 = is_boolean_helper 
+    let res = cond * val_true + (1 - cond) * val_false
     return (res)
 end
+
 
 @external
 func test_ternary_conditional_operator():
