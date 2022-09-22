@@ -1,7 +1,6 @@
 %lang starknet
 from starkware.cairo.common.math_cmp import is_le
 
-# I AM NOT DONE
 
 # TODO
 # Rewrite those functions with a high level syntax

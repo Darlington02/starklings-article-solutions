@@ -14,8 +14,6 @@ from starkware.cairo.common.pow import pow
 # - https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/bitwise.cairo
 # - https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/cairo_builtins.cairo#L17
 
-# I AM NOT DONE
-
 # TODO: Use a bitwise operation to return the n-th bit of the value parameter
 
 func get_nth_bit{bitwise_ptr : BitwiseBuiltin*, range_check_ptr : felt}(value, n) -> (res):

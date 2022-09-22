@@ -10,15 +10,14 @@ from starkware.cairo.common.math_cmp import is_not_zero
 # Use this trick to rewrite functions without "if" conditions
 # Note: This helps to avoid dealing with revoked references.
 
-# I AM NOT DONE
-
 func is_binary_if(x : felt) -> (res : felt):
     if x == 0:
         return (1)
     end
     if x == 1:
         return (1)
-    end
+    end 
+
     return (0)
 end
 
@@ -26,7 +25,8 @@ end
 
 func is_binary_no_if(x : felt) -> (res : felt):
     # FILL ME
-    return (res)
+    let (not_zero) = is_not_zero((x - 1) * x)
+    return (1 - not_zero)
 end
 
 # TODO: Fix the function so that
@@ -35,6 +35,9 @@ end
 
 func is_cool(x : felt) -> (res : felt):
     # FILL ME
+    let number = (x - 1337) * (x - 69420) * (x - 42)
+    let (status) = is_not_zero(number)
+    let res = status * 'meh' + (1 - status) * 'cool'
     return (res)
 end
 

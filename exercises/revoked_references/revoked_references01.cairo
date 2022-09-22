@@ -2,8 +2,6 @@
 
 # References in Cairo are like aliases to specific memory cells pointed by ap
 
-# I AM NOT DONE
-
 # TODO: complete the bar function to make the test pass
 # You will encounter a "revoked reference" error
 # https://www.cairo-lang.org/docs/how_cairo_works/consts.html#revoked-references
