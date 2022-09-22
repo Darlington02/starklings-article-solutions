@@ -10,8 +10,6 @@ from starkware.cairo.common.cairo_builtins import BitwiseBuiltin
 # If the number is one, stop the computation
 # https://en.wikipedia.org/wiki/Collatz_conjecture
 
-# I AM NOT DONE
-
 # TODO: write a recursive implementation of Collatz sequence that returns the nth collatz number from the seed
 # HELP: number % 2 == 0 => bitwise_and(number, 1) == 0
 

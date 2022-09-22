@@ -20,11 +20,13 @@ func foo(n):
 end
 
 func bar{hash_ptr : HashBuiltin*}():
+    alloc_locals
     hash2(1, 2)  # Do not change
     foo(3)  # Do not change
 
     # Insert something here to make the test pass
-
+    local hash_ptr: HashBuiltin* = hash_ptr
+    
     hash2(3, 4)  # Do not change
     return ()  # Do not change
 end
