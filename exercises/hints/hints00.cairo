@@ -6,7 +6,6 @@
 # Memory can be accessed and assigned inside a hint by using variables identifiers.
 # e.g., inside a hint variable `a` is accessed through `ids.a`
 
-# I AM NOT DONE
 
 # TODO: Assign the value of `res` inside a hint.
 
@@ -14,6 +13,7 @@ func basic_hint() -> (value : felt):
     alloc_locals
     local res
     # TODO: Insert hint here
+    %{ ids.res = 42 %}
     return (res)
 end
 
